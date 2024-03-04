@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="Style.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <h1>Formulario de Datos</h1>
+  <input type="text" class="nombres" id="nombres" placeholder="Nombres" value="rafa">
+  <input type="text" class="apellidos" id="apellidos" placeholder="Apellidos" value="rodriguez">
+  <input type="number" class="telefono" id="telefono" placeholder="Telefóno" value="3022721111">
+  <input type="email" class="correo" id="correo" placeholder="Correo" value="hola@gmail.omc">
+  <select name="genero" class="genero" id="genero">
+    <option value="">Selecciona un genero</option>
+    <option value="Masculino" selected>Masculino</option>
+    <option value="Femenino">Femenino</option>
+    <option value="Otro">Otro</option>
+  </select>
+  <button onclick="validacionDeDatos()" id="guardar" style="display:block;">Guardar</button>
+  <button onclick="updateData()" id="actualizar" style="display: none;" >Actualizar</button>
+  <button onclick="deleteData()" id="eliminar" style="display: none;">Eliminar</button>
+  <h2> Datos Guardados</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Telefono</th>
+        <th>Correo</th>
+        <th>Genero</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody class="tabla" id="tabla-data">
+    </tbody>
+</body>
+<script src="home.js"></script>
+</html>
